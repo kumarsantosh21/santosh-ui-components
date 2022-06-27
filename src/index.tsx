@@ -1,10 +1,12 @@
 import React from "react";
-
+import MuiButton from "@mui/material/Button";
 interface Props {
   child: string;
 }
-export const TestingComponent = ({ child }: Props): JSX.Element => {
-  return <div>Testing Component: {child}</div>;
+export const SimpelComponent = ({ child }: Props): JSX.Element => {
+  return <div>Simple Component: {child}</div>;
 };
 
-export { A, B, C } from "./core";
+export const CheckingmuiButton = ({ child }: Props): JSX.Element => {
+  return <MuiButton>Button Component: {child}</MuiButton>;
+};
