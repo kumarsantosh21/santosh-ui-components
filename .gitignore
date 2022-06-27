@@ -23,4 +23,7 @@ yarn-debug.log*
 yarn-error.log*
 #  testing files
 /dist
-/localtestingcomponents
+/localtestingcomponents/node_modules
+/localtestingcomponents/package-lock.json
+/localtestingcomponents/README.md
+/localtestingcomponents/.gitignore
