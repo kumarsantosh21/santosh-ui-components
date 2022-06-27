@@ -8,5 +8,6 @@ export const SimpelComponent = ({ child }: Props): JSX.Element => {
 };
 
 export const CheckingmuiButton = ({ child }: Props): JSX.Element => {
-  return <MuiButton>Button Component: {child}</MuiButton>;
+  return <MuiButton>Button test: {child}</MuiButton>;
 };
+export * from "./core";
