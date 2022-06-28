@@ -7,13 +7,13 @@ function App() {
       <Button>test</Button>
       <Alert
         variant="outlined"
-        severity="success"
+        severity="warning"
         alertTitle="This is title"
-        // hasAction
-        // actionText="UNDO"
-        // actionButtonFunciton={() => {
-        //   console.log("should trigger hasAction Button");
-        // }}
+        hasAction
+        actionText="UNDO"
+        actionButtonFunciton={() => {
+          console.log("should trigger hasAction Button");
+        }}
         onClose={() => {}}
       >
         This is alert
