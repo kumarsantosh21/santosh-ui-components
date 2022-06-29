@@ -4,7 +4,7 @@ import AlertTitle from "@mui/material/AlertTitle";
 import Button from "./Button";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 
-interface AlertProps extends MuiAlertProps {
+export interface AlertProps extends MuiAlertProps {
   children?: React.ReactNode;
   variant?: "outlined" | "standard" | "filled";
   alertTitle?: React.ReactNode;
