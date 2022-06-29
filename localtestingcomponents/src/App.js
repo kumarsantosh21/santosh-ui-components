@@ -41,9 +41,10 @@ function App() {
       </Alert>
       <Snackbar
         open={open}
+        sx={{ marginTop: "150px" }}
         onClose={handleClose}
         // autoHideDuration={6000}
-        anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
+        // anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
         AlertPropsOptions={{
           children: "message",
           onClose: handleClose,
