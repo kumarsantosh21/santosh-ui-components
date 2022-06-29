@@ -24,12 +24,21 @@ interface SnackbarProps extends MuiSnackbarProps {
   open: boolean;
   autoHideDuration?: number;
   AlertPropsOptions?: alertProps;
+  anchorOrigin?: {
+    vertical: "top" | "bottom";
+    horizontal: "left" | "center" | "right";
+  };
+  TransitionComponent?: React.JSXElementConstructor<
+    TransitionProps & { children: React.ReactElement<any, any> }
+  >;
 }
 
 const CustomSnackbar = ({
   open,
   autoHideDuration,
   AlertPropsOptions,
+  anchorOrigin,
+  TransitionComponent,
   ...rest
 }: SnackbarProps): JSX.Element => {
   return (
@@ -37,8 +46,8 @@ const CustomSnackbar = ({
       <Snackbar
         open={open}
         autoHideDuration={autoHideDuration ?? 5000}
-        anchorOrigin={{ vertical: "top", horizontal: "right" }}
-        TransitionComponent={TransitionLeft}
+        anchorOrigin={anchorOrigin ?? { vertical: "top", horizontal: "right" }}
+        TransitionComponent={TransitionComponent ?? TransitionLeft}
         {...rest}
       >
         <div>
