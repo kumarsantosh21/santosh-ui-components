@@ -46,7 +46,8 @@ function App() {
         // autoHideDuration={6000}
         // anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
         AlertPropsOptions={{
-          children: "message",
+          children:
+            "message is the thing uou need to handle that any waya asdf asdfsadli;f jaks;df ;lkjaskl[dfj sj dfklj ;asljf l",
           onClose: handleClose,
         }}
       />
